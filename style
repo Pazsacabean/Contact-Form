@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f7f7f7;
+  }
+  
+  /* Contact Form Styles */
+  
+  .contact-form {
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+  }
+  
+  .contact-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Form Element Styles */
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .input-field {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  .input-field input[type="text"],
+  .input-field input[type="email"],
+  .input-field textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .input-field .underline {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #ccc;
+    transition: background-color 0.3s ease;
+  }
+  
+  .input-field input[type="text"]:focus,
+  .input-field input[type="email"]:focus,
+  .input-field textarea:focus {
+    border-bottom: 1px solid #4caf50;
+  }
+  
+  .input-field .underline:focus {
+    background-color: #4caf50;
+  }
+  
+  /* Submit Button Styles */
+  
+  input[type="submit"] {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #3e8e41;
+  }
+  
+  /* Responsive Design */
+  
+  @media (max-width: 768px) {
+    .contact-form {
+      margin: 20px auto;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .contact-form {
+      margin: 10px auto;
+    }
+  }
